@@ -70,7 +70,7 @@ const AboutSection = () => {
               className="relative"
             >
               {/* Main Image Placeholder */}
-              <div className="w-full aspect-[3/4] max-w-sm mx-auto rounded-3xl overflow-hidden border-4 border-confetti-pink/30">
+              <div className="w-full aspect-[3/4] max-w-sm mx-auto rounded-3xl overflow-hidden border-4 border-confetti-pink/30 mx-4 sm:mx-6">
                 <Image
                   src="/2nd.jpg"
                   alt="Esther Chen in Taipei"

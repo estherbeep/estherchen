@@ -14,7 +14,7 @@ const HeroSection = () => {
   }
 
   return (
-    <section className="min-h-screen flex items-end sm:items-center justify-center relative overflow-hidden pt-28 sm:pt-36 md:pt-40 pb-20 sm:pb-24 md:pb-28">
+    <section className="min-h-screen flex items-end sm:items-center justify-center relative overflow-hidden pt-28 sm:pt-36 md:pt-40 pb-20 sm:pb-24 md:pb-28 px-4 sm:px-6 lg:px-8">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-beige-50 via-beige-100 to-beige-200"></div>
       
@@ -51,7 +51,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-base sm:text-lg text-beige-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg text-beige-600 max-w-3xl mx-auto leading-relaxed px-4 sm:px-6"
           >
             Birthdays mark milestones. This year, I'm shooting my shot for an internship opportunity in{' '}
             <span className="font-semibold text-beige-800">finance & consulting</span>
@@ -63,7 +63,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="relative mx-auto w-32 h-32 sm:w-40 sm:h-40"
+            className="relative mx-auto w-32 h-32 sm:w-40 sm:h-40 mb-6"
           >
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-beige-200/70">
               <Image
@@ -85,7 +85,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto border border-beige-200"
+            className="bg-white/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto border border-beige-200 mx-4 sm:mx-6"
           >
             <p className="text-lg font-medium text-beige-800">
               Rotman Commerce student @ <span className="text-beige-900 font-semibold">[the University of Toronto]</span>
