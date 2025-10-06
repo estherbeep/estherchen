@@ -84,7 +84,7 @@ const Navigation = () => {
           transition={{ duration: 0.3 }}
           className="md:hidden overflow-hidden"
         >
-          <div className="py-4 space-y-4 px-4 sm:px-6">
+          <div className="py-4 space-y-4 bg-beige-50/95 backdrop-blur-md">
             {navItems.map((item) => (
               <button
                 key={item.name}
