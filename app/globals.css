@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+  
+  .container-max {
+    @apply max-w-4xl mx-auto;
+  }
+  
+  .card-soft {
+    @apply bg-cream-50 border border-beige-200 rounded-3xl shadow-sm;
+  }
+  
+  .pill {
+    @apply rounded-2xl px-4 py-2 bg-cream-100 border border-beige-200;
+  }
+  
+  .btn-primary {
+    @apply bg-confetti-pink text-white px-6 py-3 rounded-full font-medium hover:bg-confetti-pink/90 transition-all duration-300 hover:scale-105 shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-beige-200 text-beige-800 px-6 py-3 rounded-full font-medium hover:bg-beige-300 transition-all duration-300 hover:scale-105;
+  }
+  
+  .confetti-dot {
+    @apply absolute w-2 h-2 rounded-full opacity-60;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-confetti-pink to-confetti-yellow bg-clip-text text-transparent saturate-150;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
