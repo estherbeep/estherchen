@@ -28,7 +28,7 @@ const PersonalitySection = () => {
 
         <div className="max-w-5xl mx-auto">
           {/* Fun Facts Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20 px-4 sm:px-6">
             {funFacts.map((fact, index) => (
               <motion.div
                 key={fact.text}
@@ -36,7 +36,7 @@ const PersonalitySection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-3xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 border border-beige-200"
+                className="bg-white rounded-3xl p-6 sm:p-8 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 border border-beige-200 mx-2 sm:mx-0"
               >
                 <div className="text-4xl mb-4">{fact.text.split(' ')[0]}</div>
                 <p className={`text-lg font-semibold ${fact.color} leading-tight`}>
@@ -54,7 +54,7 @@ const PersonalitySection = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-beige-200 max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-beige-200 max-w-4xl mx-auto mx-4 sm:mx-6">
               <p className="text-lg text-beige-800 leading-relaxed mb-4">
                 Putting myself out here with this little project might be the bravest thing I've ever done. 
                 So if you've taken a moment to stop by, thank you, really.
