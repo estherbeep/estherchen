@@ -6,90 +6,33 @@ import { ChevronDown, Sparkles, MapPin, Calendar } from 'lucide-react'
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden pt-20">
+    <section className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden pt-20 px-4 sm:px-6 lg:px-8">
       <div className="container-max relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
+        <div className="flex flex-col items-center text-center">
+          {/* Main Headline */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center lg:text-left"
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-8"
           >
-            {/* Main Headline */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="mb-8"
-            >
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-gray-900 mb-4 leading-tight">
-                Hi, I'm Esther!
-              </h1>
-              <div className="text-2xl sm:text-3xl font-medium text-orange-600 mt-4">
-                Welcome to my birthday project!
-              </div>
-            </motion.div>
-            
-            {/* Supporting Text */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="mb-8"
-            >
-              <p className="text-lg text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                Birthdays mark milestones. This year, I'm shooting my shot for an internship opportunity in finance & consulting. Hope your day's going really well, by the way ✨
-              </p>
-            </motion.div>
-
-            {/* CTA Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex justify-center lg:justify-start mb-12"
-            >
-              <a
-                href="#about"
-                className="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2"
-              >
-                Learn about me in 5 minutes!
-                <ChevronDown className="w-5 h-5" />
-              </a>
-            </motion.div>
-
-            {/* Statistics */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0"
-            >
-              <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">Summer 2026</div>
-                <div className="text-sm text-gray-600">Available</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">Toronto</div>
-                <div className="text-sm text-gray-600">Location</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">Finance</div>
-                <div className="text-sm text-gray-600">Focus</div>
-              </div>
-            </motion.div>
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-gray-900 mb-4 leading-tight">
+              Hi, I'm Esther!
+            </h1>
+            <div className="text-2xl sm:text-3xl font-medium text-orange-600 mt-4">
+              Welcome to my birthday project!
+            </div>
           </motion.div>
 
-          {/* Right Content - Your Photo */}
+          {/* Profile Picture - Right under Welcome text */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center lg:justify-end relative"
+            className="flex justify-center relative mb-8"
           >
-            <div className="relative w-80 h-80 sm:w-96 sm:h-96">
-              {/* Main Photo - BACK TO CIRCULAR */}
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+              {/* Main Photo - Circular */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <Image
                   src="/1st.png"
@@ -126,6 +69,55 @@ const HeroSection = () => {
                   <span className="text-sm font-medium text-gray-700">Finance & Consulting</span>
                 </div>
               </motion.div>
+            </div>
+          </motion.div>
+          
+          {/* Supporting Text */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mb-8"
+          >
+            <p className="text-lg text-gray-600 max-w-lg mx-auto leading-relaxed">
+              Birthdays mark milestones. This year, I'm shooting my shot for an internship opportunity in finance & consulting. Hope your day's going really well, by the way ✨
+            </p>
+          </motion.div>
+
+          {/* CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex justify-center mb-12"
+          >
+            <a
+              href="#about"
+              className="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2"
+            >
+              Learn about me in 5 minutes!
+              <ChevronDown className="w-5 h-5" />
+            </a>
+          </motion.div>
+
+          {/* Statistics */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+            className="grid grid-cols-3 gap-8 max-w-md mx-auto"
+          >
+            <div className="text-center">
+              <div className="text-2xl font-bold text-gray-900">Summer 2026</div>
+              <div className="text-sm text-gray-600">Available</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-gray-900">Toronto</div>
+              <div className="text-sm text-gray-600">Location</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-gray-900">Finance</div>
+              <div className="text-sm text-gray-600">Focus</div>
             </div>
           </motion.div>
         </div>
