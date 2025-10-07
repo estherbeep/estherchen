@@ -4,56 +4,56 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 const PersonalitySection = () => {
-  const polaroids = [
-    {
-      id: 1,
-      image: "/nail1.jpeg",
-      caption: "Part Time Nail Artist",
-      rotation: -2
-    },
-    {
-      id: 2,
-      image: "/travel1.jpeg",
-      caption: "Travel",
-      rotation: 1
-    },
-    {
-      id: 3,
-      image: "/cook1.jpeg",
-      caption: "Cook to Survive",
-      rotation: -1
-    },
-    {
-      id: 4,
-      image: "/travel2.jpeg",
-      caption: "Travel",
-      rotation: 2
-    },
-    {
-      id: 5,
-      image: "/nail2.jpeg",
-      caption: "Part Time Nail Artist",
-      rotation: -1.5
-    },
-    {
-      id: 6,
-      image: "/bunny1.jpeg",
-      caption: "Bunny Owner",
-      rotation: 1.5
-    },
-    {
-      id: 7,
-      image: "/cook2.jpeg",
-      caption: "Cook to Survive",
-      rotation: -0.5
-    },
-    {
-      id: 8,
-      image: "/travel3.jpeg",
-      caption: "Travel",
-      rotation: 0.8
-    }
-  ]
+      const polaroids = [
+        {
+          id: 1,
+          image: "/nail1.jpeg",
+          caption: "Part Time Nail Artist",
+          rotation: -2
+        },
+        {
+          id: 2,
+          image: "/travel1.jpeg",
+          caption: "Travel",
+          rotation: 1
+        },
+        {
+          id: 3,
+          image: "/cook1.jpeg",
+          caption: "Cook to Survive",
+          rotation: -1
+        },
+        {
+          id: 4,
+          image: "/travel2.jpeg",
+          caption: "Travel",
+          rotation: 2
+        },
+        {
+          id: 5,
+          image: "/nail2.jpeg",
+          caption: "Part Time Nail Artist",
+          rotation: -1.5
+        },
+        {
+          id: 6,
+          image: "/bunny1.jpeg",
+          caption: "Bunny Owner",
+          rotation: 1.5
+        },
+        {
+          id: 7,
+          image: "/cook2.jpeg",
+          caption: "Cook to Survive",
+          rotation: -0.5
+        },
+        {
+          id: 8,
+          image: "/travel3.JPEG",
+          caption: "Travel",
+          rotation: 0.8
+        }
+      ]
 
   return (
     <section className="section-padding gradient-bg">
