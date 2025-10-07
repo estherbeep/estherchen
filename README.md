@@ -127,3 +127,4 @@ This is a personal project, but feel free to use it as inspiration for your own 
 
 *Built with love and lots of confetti*
 
+# Esther's Birthday Project - Mobile Version
