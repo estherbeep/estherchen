@@ -16,25 +16,25 @@ const SkillsSection = () => {
   ]
 
   return (
-    <section id="skills" className="section-padding bg-white">
+    <section id="skills" className="section-padding gradient-bg">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-beige-900 mb-4">
+          <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             Top Skills
           </h2>
-          <p className="text-lg text-beige-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Here's what I bring to the table
           </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-6">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill}
@@ -42,10 +42,10 @@ const SkillsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex items-center space-x-3 bg-beige-50 rounded-xl p-4 hover:bg-beige-100 transition-colors duration-300 hover:shadow-md"
+                className="flex items-center space-x-4 bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 transition-all duration-300 p-6 hover:shadow-lg rounded-2xl"
               >
-                <span className="text-confetti-pink mt-1">•</span>
-                <span className="text-lg font-medium text-beige-800">{skill}</span>
+                <span className="text-gray-900 mt-1 font-bold">•</span>
+                <span className="text-lg font-medium text-gray-800">{skill}</span>
               </motion.div>
             ))}
           </div>
@@ -56,4 +56,3 @@ const SkillsSection = () => {
 }
 
 export default SkillsSection
-

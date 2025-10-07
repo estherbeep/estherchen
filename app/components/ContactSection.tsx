@@ -89,22 +89,22 @@ const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="section-padding bg-gradient-to-br from-confetti-pink/10 to-confetti-yellow/10">
+    <section id="contact" className="section-padding gradient-bg">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-beige-900 mb-4">
-            Let's Connect!
+          <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+            Let's Connect
           </h2>
-          <p className="text-lg text-beige-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Thank you for visiting my birthday project and for scrolling this far. It means a lot!
           </p>
-          <p className="text-beige-600 mt-4">
+          <p className="text-gray-600 mt-4">
             If you'd like to connect, share a little about yourself below — I'll reach out personally.
           </p>
         </motion.div>
@@ -116,11 +116,11 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <form action="https://formspree.io/f/xblzkqdb" method="POST" className="bg-white rounded-2xl p-8 shadow-lg border border-beige-200">
+          <form action="https://formspree.io/f/xblzkqdb" method="POST" className="bg-white/80 backdrop-blur-sm border border-gray-200 p-8 shadow-lg rounded-2xl">
             <div className="space-y-6">
               {/* Name Field */}
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-beige-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-display font-medium text-black-700 mb-2 uppercase tracking-wider">
                   Name *
                 </label>
                 <input
@@ -130,14 +130,14 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-beige-300 rounded-xl focus:ring-2 focus:ring-confetti-pink/20 focus:border-confetti-pink transition-colors duration-300"
+                  className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-gray-900 focus:border-gray-300 transition-colors duration-300 bg-white rounded-xl"
                   placeholder="Your name"
                 />
               </div>
 
               {/* Company Field */}
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-beige-700 mb-2">
+                <label htmlFor="company" className="block text-sm font-display font-medium text-black-700 mb-2 uppercase tracking-wider">
                   Company
                 </label>
                 <input
@@ -146,14 +146,14 @@ const ContactSection = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-beige-300 rounded-xl focus:ring-2 focus:ring-confetti-pink/20 focus:border-confetti-pink transition-colors duration-300"
+                  className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-gray-900 focus:border-gray-300 transition-colors duration-300 bg-white rounded-xl"
                   placeholder="Your company or organization"
                 />
               </div>
 
               {/* Email Field */}
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-beige-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-display font-medium text-black-700 mb-2 uppercase tracking-wider">
                   Email
                 </label>
                 <input
@@ -162,14 +162,14 @@ const ContactSection = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-beige-300 rounded-xl focus:ring-2 focus:ring-confetti-pink/20 focus:border-confetti-pink transition-colors duration-300"
+                  className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-gray-900 focus:border-gray-300 transition-colors duration-300 bg-white rounded-xl"
                   placeholder="your.email@example.com"
                 />
               </div>
 
               {/* Intention Dropdown */}
               <div>
-                <label htmlFor="intention" className="block text-sm font-medium text-beige-700 mb-2">
+                <label htmlFor="intention" className="block text-sm font-display font-medium text-black-700 mb-2 uppercase tracking-wider">
                   What brings you here?
                 </label>
                 <select
@@ -177,7 +177,7 @@ const ContactSection = () => {
                   name="intention"
                   value={formData.intention}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-beige-300 rounded-xl focus:ring-2 focus:ring-confetti-pink/20 focus:border-confetti-pink transition-colors duration-300"
+                  className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-gray-900 focus:border-gray-300 transition-colors duration-300 bg-white rounded-xl"
                 >
                   <option value="">Select an option</option>
                   {intentions.map((intention, index) => (
@@ -199,7 +199,7 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-beige-300 rounded-xl focus:ring-2 focus:ring-confetti-pink/20 focus:border-confetti-pink transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 border border-black-200 focus:ring-2 focus:ring-black-900 focus:border-transparent transition-colors duration-300 bg-white resize-none"
                   placeholder="Share any thoughts, questions, or just say hi!"
                 />
               </div>
@@ -210,7 +210,7 @@ const ContactSection = () => {
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full bg-gradient-to-r from-confetti-pink to-confetti-yellow text-white py-4 rounded-xl font-semibold text-lg hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                className="w-full bg-gray-900 text-white py-4 font-semibold text-lg hover:bg-gray-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 rounded-full"
               >
                 {isSubmitting ? (
                   <>

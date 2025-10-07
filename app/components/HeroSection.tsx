@@ -2,113 +2,133 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { ArrowDown, Sparkles } from 'lucide-react'
+import { ChevronDown, Sparkles, MapPin, Calendar } from 'lucide-react'
 
 const HeroSection = () => {
-  const nameGradientClass = 'gradient-text'
-  const scrollToNext = () => {
-    const aboutSection = document.querySelector('#about')
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
-    <section className="min-h-screen flex items-end sm:items-center justify-center relative overflow-hidden pt-28 sm:pt-36 md:pt-40 pb-20 sm:pb-24 md:pb-28 px-4 sm:px-6 lg:px-8">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-beige-50 via-beige-100 to-beige-200"></div>
-      
-      {/* Floating Accents (subtle) */}
-      <div className="absolute top-24 left-10 w-2 h-2 bg-confetti-blue rounded-full animate-float opacity-40"></div>
-      <div className="absolute top-36 right-16 w-2 h-2 bg-confetti-yellow rounded-full animate-confetti opacity-40"></div>
-
-      <div className="container-max relative z-10 mt-4 sm:mt-0">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="space-y-6 text-center"
-        >
-          {/* Badge removed per request */}
-
-          {/* Main Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+    <section className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden pt-20">
+      <div className="container-max relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance"
+            transition={{ duration: 0.8 }}
+            className="text-center lg:text-left"
           >
-            Hi, I'm{' '}
-            <span className={nameGradientClass}>Esther</span>
-            <br />
-            <span className="text-xl sm:text-2xl lg:text-3xl font-normal text-beige-700">
-              Welcome to my birthday project 🎉
-            </span>
-          </motion.h1>
+            {/* Main Headline */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="mb-8"
+            >
+              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-gray-900 mb-4 leading-tight">
+                Hi, I'm Esther!
+              </h1>
+              <div className="text-2xl sm:text-3xl font-medium text-orange-600 mt-4">
+                Welcome to my birthday project!
+              </div>
+            </motion.div>
+            
+            {/* Supporting Text */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="mb-8"
+            >
+              <p className="text-lg text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                Birthdays mark milestones. This year, I'm shooting my shot for an internship opportunity in finance & consulting. Hope your day's going really well, by the way ✨
+              </p>
+            </motion.div>
 
-          {/* Subtext */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-base sm:text-lg text-beige-600 max-w-3xl mx-auto leading-relaxed px-4 sm:px-6"
-          >
-            Birthdays mark milestones. This year, I'm shooting my shot for an internship opportunity in{' '}
-            <span className="font-semibold text-beige-800">finance & consulting</span>
-            . Hope your day's going really well, by the way ☀️
-          </motion.p>
+            {/* CTA Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="flex justify-center lg:justify-start mb-12"
+            >
+              <a
+                href="#about"
+                className="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 transition-colors duration-300 flex items-center gap-2"
+              >
+                Learn about me in 5 minutes!
+                <ChevronDown className="w-5 h-5" />
+              </a>
+            </motion.div>
 
-          {/* Portrait Placeholder */}
+            {/* Statistics */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="grid grid-cols-3 gap-8 max-w-md mx-auto lg:mx-0"
+            >
+              <div className="text-center">
+                <div className="text-2xl font-bold text-gray-900">Summer 2026</div>
+                <div className="text-sm text-gray-600">Available</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-gray-900">Toronto</div>
+                <div className="text-sm text-gray-600">Location</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-gray-900">Finance</div>
+                <div className="text-sm text-gray-600">Focus</div>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Right Content - Your Photo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="relative mx-auto w-32 h-32 sm:w-40 sm:h-40 mb-6"
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex justify-center lg:justify-end relative"
           >
-            <div className="w-full h-full rounded-full overflow-hidden border-4 border-beige-200/70">
-              <Image
-                src="/1st.png"
-                alt="Esther Chen portrait"
-                fill
-                priority
-                className="object-cover rounded-full origin-center scale-[1]"
-                style={{ objectPosition: 'center 50%' }}
-              />
-            </div>
-            <div className="absolute -top-2 -right-2 w-8 h-8 bg-confetti-purple/30 rounded-full flex items-center justify-center animate-bounce">
-              <span className="text-lg">🎂</span>
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96">
+              {/* Main Photo - BACK TO CIRCULAR */}
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                <Image
+                  src="/1st.png"
+                  alt="Esther Chen"
+                  fill
+                  className="object-cover object-center"
+                  style={{ objectPosition: 'center 7%' }}
+                  priority
+                />
+              </div>
+              
+              {/* Floating Badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 1.2 }}
+                className="absolute -top-4 -right-4 bg-white border border-gray-200 px-4 py-2 shadow-lg rounded-full"
+              >
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-sm font-medium text-gray-700">Available for opportunities</span>
+                </div>
+              </motion.div>
+
+              {/* Specialization Badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 1.4 }}
+                className="absolute -bottom-4 -left-4 bg-white border border-gray-200 px-4 py-2 shadow-lg rounded-full"
+              >
+                <div className="flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-gray-600" />
+                  <span className="text-sm font-medium text-gray-700">Finance & Consulting</span>
+                </div>
+              </motion.div>
             </div>
           </motion.div>
-
-          {/* Quick Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="bg-white/70 backdrop-blur-sm rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto border border-beige-200 mx-4 sm:mx-6"
-          >
-            <p className="text-lg font-medium text-beige-800">
-              Rotman Commerce student @ <span className="text-beige-900 font-semibold">[the University of Toronto]</span>
-            </p>
-            <div className="mt-4">
-              <p className="text-beige-900 font-semibold text-base sm:text-lg inline-flex items-center px-4 py-2 rounded-full bg-beige-100 border border-beige-200">
-                Diligent, curious, and always taking ownership
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Scroll Indicator */}
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
-            onClick={scrollToNext}
-            className="inline-flex items-center space-x-2 pill mx-auto bg-ink-900 text-cream-50 hover:bg-ink-800 transition-colors duration-300 group"
-          >
-            <span className="text-sm font-medium">Learn about me in 5 minutes!</span>
-            <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-300" />
-          </motion.button>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

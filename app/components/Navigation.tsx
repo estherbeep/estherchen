@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Sparkles } from 'lucide-react'
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,9 +18,9 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'About', href: '#about' },
-    { name: 'Seeking', href: '#seeking' },
-    { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Seeking', href: '#seeking' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -39,26 +39,30 @@ const Navigation = () => {
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-cream-50/95 backdrop-blur-md shadow-md' 
+          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200' 
           : 'bg-transparent'
       }`}
     >
       <div className="container-max">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-6">
+          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-xl font-bold gradient-text"
+            className="text-2xl font-bold text-gray-900 flex items-center gap-2"
          >
-            Esther Chen
+            <div className="w-6 h-6 bg-gray-900 rounded-full flex items-center justify-center">
+              <span className="text-white text-sm">★</span>
+            </div>
+            Esther
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.href)}
-                className="pill text-ink-700 hover:text-ink-900 transition-colors duration-300 font-medium hover:border-confetti-pink"
+                className="text-gray-600 hover:text-gray-900 transition-colors duration-300 font-medium"
               >
                 {item.name}
               </button>
@@ -68,9 +72,9 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-beige-100 transition-colors"
+            className="md:hidden p-2 hover:bg-gray-100 transition-colors rounded-lg"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={24} className="text-gray-900" /> : <Menu size={24} className="text-gray-900" />}
           </button>
         </div>
 
@@ -84,12 +88,12 @@ const Navigation = () => {
           transition={{ duration: 0.3 }}
           className="md:hidden overflow-hidden"
         >
-          <div className="py-4 space-y-4 bg-beige-50/95 backdrop-blur-md">
+          <div className="py-6 space-y-4 bg-white border-t border-gray-200">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left text-beige-700 hover:text-confetti-blue transition-colors duration-300 font-medium py-2"
+                className="block w-full text-left text-gray-600 hover:text-gray-900 transition-colors duration-300 font-medium py-2"
               >
                 {item.name}
               </button>
@@ -102,4 +106,3 @@ const Navigation = () => {
 }
 
 export default Navigation
-

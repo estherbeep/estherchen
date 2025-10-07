@@ -6,9 +6,10 @@ import { Heart, Mail, MapPin, Calendar, Award, Users, BookOpen, Target } from 'l
 import Navigation from './components/Navigation'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
-import SeekingSection from './components/SeekingSection'
-import ExperienceSection from './components/ExperienceSection'
 import SkillsSection from './components/SkillsSection'
+import ToolsCarousel from './components/ToolsCarousel'
+import ExperienceSection from './components/ExperienceSection'
+import SeekingSection from './components/SeekingSection'
 import PersonalitySection from './components/PersonalitySection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
@@ -23,14 +24,14 @@ export default function Home() {
 
   if (!isLoaded) {
     return (
-      <div className="min-h-screen bg-beige-50 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-confetti-pink"></div>
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
       </div>
     )
   }
 
   return (
-    <main className="relative overflow-hidden">
+    <main className="relative overflow-hidden min-h-screen">
       <ConfettiBackground />
       <Navigation />
       
@@ -38,12 +39,14 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
+        className="relative z-10"
       >
         <HeroSection />
         <AboutSection />
-        <SeekingSection />
-        <ExperienceSection />
         <SkillsSection />
+        <ToolsCarousel />
+        <ExperienceSection />
+        <SeekingSection />
         <PersonalitySection />
         <ContactSection />
         <Footer />
@@ -51,4 +54,3 @@ export default function Home() {
     </main>
   )
 }
-

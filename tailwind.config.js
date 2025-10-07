@@ -8,42 +8,53 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        beige: {
-          50: '#faf9f7',
-          100: '#f5f3f0',
-          200: '#ede8e1',
-          300: '#e4dccf',
-          400: '#d9cdb8',
-          500: '#ccb89a',
-          600: '#b8a085',
-          700: '#9a8569',
-          800: '#7d6b55',
-          900: '#665647',
+        black: {
+          50: '#f8f8f8',
+          100: '#e8e8e8',
+          200: '#d1d1d1',
+          300: '#b4b4b4',
+          400: '#8a8a8a',
+          500: '#6b6b6b',
+          600: '#525252',
+          700: '#404040',
+          800: '#2a2a2a',
+          900: '#1a1a1a',
         },
-        ink: {
-          900: '#0f172a',
-          800: '#1f2937',
-          700: '#334155',
-          600: '#475569',
-          500: '#64748b',
+        amber: {
+          50: '#fffbeb',
+          100: '#fef3c7',
+          200: '#fde68a',
+          300: '#fcd34d',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          700: '#b45309',
+          800: '#92400e',
+          900: '#78350f',
         },
-        cream: {
-          50: '#f9f7f2',
-          100: '#f3efe6',
-          200: '#ebe4d6',
+        orange: {
+          50: '#fff7ed',
+          100: '#ffedd5',
+          200: '#fed7aa',
+          300: '#fdba74',
+          400: '#fb923c',
+          500: '#f97316',
+          600: '#ea580c',
+          700: '#c2410c',
+          800: '#9a3412',
+          900: '#7c2d12',
         },
-        confetti: {
-          // Bright, celebratory accents
-          pink: '#ff5fa2',
-          yellow: '#ffc042',
-          blue: '#6bcff6',
-          purple: '#b388ff',
-          orange: '#ff8a65',
+        accent: {
+          pink: '#ff6b9d',
+          yellow: '#ffd93d',
+          blue: '#6bcf7f',
+          purple: '#a8e6cf',
         }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        serif: ['Crimson Text', 'serif'],
+        display: ['Space Grotesk', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

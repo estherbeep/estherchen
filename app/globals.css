@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,11 +10,21 @@
   
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: 
+      radial-gradient(circle at 20% 10%, rgba(255, 229, 229, 0.6) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(229, 217, 255, 0.5) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(255, 229, 217, 0.4) 0%, transparent 50%),
+      #FFF5E6;
+    background-attachment: fixed;
+    min-height: 100vh;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -24,31 +34,19 @@
   }
   
   .container-max {
-    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-  
-  .card-soft {
-    @apply bg-cream-50 border border-beige-200 rounded-3xl shadow-sm;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
   .pill {
-    @apply rounded-2xl px-4 py-2 bg-cream-100 border border-beige-200;
+    @apply px-4 py-2 border border-gray-200 text-sm font-medium transition-colors duration-300;
   }
   
-  .btn-primary {
-    @apply bg-confetti-pink text-white px-6 py-3 rounded-full font-medium hover:bg-confetti-pink/90 transition-all duration-300 hover:scale-105 shadow-lg;
+  .gradient-bg {
+    background: transparent;
   }
   
-  .btn-secondary {
-    @apply bg-beige-200 text-beige-800 px-6 py-3 rounded-full font-medium hover:bg-beige-300 transition-all duration-300 hover:scale-105;
-  }
-  
-  .confetti-dot {
-    @apply absolute w-2 h-2 rounded-full opacity-60;
-  }
-  
-  .gradient-text {
-    @apply bg-gradient-to-r from-confetti-pink to-confetti-yellow bg-clip-text text-transparent saturate-150;
+  .card-gradient {
+    background: linear-gradient(135deg, #ff6b9d 0%, #fbbf24 100%);
   }
 }
 
@@ -58,3 +56,30 @@
   }
 }
 
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  .text-6xl {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  
+  .text-7xl {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+  
+  .text-8xl {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+  
+  .text-4xl {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .text-5xl {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
