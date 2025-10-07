@@ -64,13 +64,13 @@ const SeekingSection = () => {
             >
               <div className="flex items-center space-x-3 mb-4 sm:mb-6">
                 <opp.icon className="w-5 h-5 sm:w-7 sm:h-7 text-gray-900" />
-                <h3 className="text-base sm:text-lg font-semibold text-gray-900">{opp.title}</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900">{opp.title}</h3>
               </div>
-              <ul className="space-y-2 sm:space-y-3 text-gray-600">
+              <ul className="space-y-3 sm:space-y-4 text-gray-600">
                 {opp.points.map((p: string, i: number) => (
                   <li key={i} className="flex items-start space-x-3">
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
-                    <span className="text-xs sm:text-sm leading-relaxed">{p}</span>
+                    <span className="text-sm sm:text-base leading-relaxed">{p}</span>
                   </li>
                 ))}
               </ul>
@@ -91,18 +91,18 @@ const SeekingSection = () => {
                 <div className="flex items-center space-x-3">
                   <Calendar className="w-6 h-6 text-gray-900" />
                   <div>
-                    <span className="font-semibold text-gray-900">Time:</span>
-                    <span className="text-gray-600 ml-2">Summer 2026</span>
+                    <span className="font-semibold text-gray-900 text-base">Time:</span>
+                    <span className="text-gray-600 ml-2 text-base">Summer 2026</span>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-6 h-6 text-gray-900" />
                   <div>
-                    <span className="font-semibold text-gray-900">Location:</span>
-                    <span className="text-gray-600 ml-2">Toronto, Canada</span>
+                    <span className="font-semibold text-gray-900 text-base">Location:</span>
+                    <span className="text-gray-600 ml-2 text-base">Toronto, Canada</span>
                   </div>
                 </div>
-          </div>
+              </div>
         </motion.div>
       </div>
     </section>
