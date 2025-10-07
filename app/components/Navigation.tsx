@@ -39,8 +39,8 @@ const Navigation = () => {
       transition={{ duration: 0.6 }}
       className={`fixed-nav transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200' 
-          : 'bg-white/90 backdrop-blur-sm'
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200' 
+          : 'bg-white/90 backdrop-blur-sm shadow-md'
       }`}
     >
       <div className="container-max">
