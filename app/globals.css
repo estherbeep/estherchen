@@ -6,6 +6,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-overflow-scrolling: touch;
   }
   
   body {
@@ -19,6 +21,8 @@
       #FFF5E6;
     background-attachment: fixed;
     min-height: 100vh;
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-overflow-scrolling: touch;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -47,6 +51,26 @@
   
   .card-gradient {
     background: linear-gradient(135deg, #ff6b9d 0%, #fbbf24 100%);
+  }
+  
+  /* GPU Acceleration for smooth animations */
+  .gpu-accelerated {
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+  
+  /* Experience card optimizations */
+  .experience-card {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    contain: layout style paint;
+  }
+  
+  /* Prevent layout shifts */
+  .stable-height {
+    min-height: 200px;
   }
 }
 

@@ -94,9 +94,9 @@ const ExperienceSection = () => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-      className="bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 transition-all duration-300 mb-8 p-8 hover:shadow-lg rounded-2xl"
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="experience-card bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 transition-all duration-300 mb-8 p-8 hover:shadow-lg rounded-2xl stable-height"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
@@ -128,9 +128,9 @@ const ExperienceSection = () => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-        className="bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 transition-all duration-300 mb-8 p-8 hover:shadow-lg rounded-2xl"
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="experience-card bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 transition-all duration-300 mb-8 p-8 hover:shadow-lg rounded-2xl stable-height"
       >
         {/* Header */}
         <div className="flex items-start justify-between mb-4">
@@ -174,14 +174,15 @@ const ExperienceSection = () => {
         </button>
 
         {/* Expanded Content with Smooth Animation */}
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           {isExpanded && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="overflow-hidden"
+              className="overflow-hidden gpu-accelerated"
+              style={{ willChange: 'height, opacity' }}
             >
               <div className="mt-6 pt-6 border-t border-gray-200">
                 {/* Detailed Description */}
@@ -234,9 +235,9 @@ const ExperienceSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-20"
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-center mb-20 gpu-accelerated"
         >
           <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-8 leading-tight">
             Experience
@@ -251,9 +252,9 @@ const ExperienceSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="mb-8"
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="mb-8 gpu-accelerated"
           >
             <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
               <Briefcase className="w-6 h-6 text-gray-900" />
@@ -274,9 +275,9 @@ const ExperienceSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="mb-8"
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="mb-8 gpu-accelerated"
           >
             <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
               <Users className="w-6 h-6 text-gray-900" />
@@ -297,9 +298,9 @@ const ExperienceSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="mb-8"
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="mb-8 gpu-accelerated"
           >
             <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
               <Briefcase className="w-6 h-6 text-gray-900" />
