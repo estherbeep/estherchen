@@ -237,12 +237,12 @@ const ExperienceSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
-          className="text-center mb-20 gpu-accelerated"
+          className="text-center mb-12 sm:mb-20 gpu-accelerated"
         >
-          <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-8 leading-tight">
             Experience
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Professional roles and leadership positions that shaped my journey
           </p>
         </motion.div>
@@ -256,11 +256,11 @@ const ExperienceSection = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="mb-8 gpu-accelerated"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
-              <Briefcase className="w-6 h-6 text-gray-900" />
+            <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
+              <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
               Professional Experience
             </h3>
-            <p className="text-gray-600">Real-world consulting and business experience</p>
+            <p className="text-sm sm:text-base text-gray-600">Real-world consulting and business experience</p>
           </motion.div>
 
           <div className="space-y-6">
@@ -279,11 +279,11 @@ const ExperienceSection = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="mb-8 gpu-accelerated"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
-              <Users className="w-6 h-6 text-gray-900" />
+            <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
+              <Users className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
               Leadership Roles
             </h3>
-            <p className="text-gray-600">Driving impact through student organizations</p>
+            <p className="text-sm sm:text-base text-gray-600">Driving impact through student organizations</p>
           </motion.div>
 
           <div className="space-y-6">
@@ -302,11 +302,11 @@ const ExperienceSection = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="mb-8 gpu-accelerated"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
-              <Briefcase className="w-6 h-6 text-gray-900" />
+            <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3 uppercase tracking-wider">
+              <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
               Additional Experience
             </h3>
-            <p className="text-gray-600">Diverse roles and valuable lessons</p>
+            <p className="text-sm sm:text-base text-gray-600">Diverse roles and valuable lessons</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-6">

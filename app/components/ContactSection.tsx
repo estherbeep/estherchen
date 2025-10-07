@@ -60,6 +60,7 @@ const ContactSection = () => {
     'Have a potential opportunity for you!',
     'Reach out and we can chat about it!',
     'Just wanted to say Happy Birthday 🎉',
+    'An advice for a fresh 21 years old',
     'Other'
   ]
 
@@ -96,12 +97,12 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-20"
         >
-          <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-8 leading-tight">
             Let's Connect
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Thank you for visiting my birthday project and for scrolling this far. It means a lot!
           </p>
           <p className="text-gray-600 mt-4">

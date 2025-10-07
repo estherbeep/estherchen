@@ -18,10 +18,10 @@ const AboutSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-8 leading-tight">
                 About Me
               </h2>
-              <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+              <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-600 leading-relaxed">
                 <p>
                   I'm someone who believes in taking ownership. When I commit to something, I love 
                   seeing it grow, improve, and run more efficiently than before. Whether it's leading 
@@ -39,9 +39,9 @@ const AboutSection = () => {
 
             {/* Education */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 shadow-lg">
-              <div className="flex items-center space-x-3 mb-6">
-                <GraduationCap className="w-6 h-6 text-gray-900" />
-                <h3 className="text-xl font-bold text-gray-900">Education</h3>
+              <div className="flex items-center space-x-3 mb-4 sm:mb-6">
+                <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900">Education</h3>
               </div>
               <div className="space-y-4">
                 <p className="font-semibold text-gray-800 text-lg">Bachelor of Commerce in Management</p>

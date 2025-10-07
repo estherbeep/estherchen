@@ -63,12 +63,12 @@ const PersonalitySection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-8 leading-tight">
             Human Touch
           </h2>
-          <p className="text-lg text-gray-600">What Makes Me, Me</p>
+          <p className="text-base sm:text-lg text-gray-600">What Makes Me, Me</p>
         </motion.div>
 
         <div className="max-w-6xl mx-auto">
