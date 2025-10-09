@@ -73,14 +73,17 @@
     min-height: 200px;
   }
   
-  /* Fixed navigation - ensure it stays visible */
+  /* Sticky navigation - ensure it stays visible */
   nav {
-    position: fixed !important;
+    position: sticky !important;
     top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
     z-index: 9999 !important;
     width: 100% !important;
+  }
+  
+  /* Ensure body and html don't interfere */
+  html, body {
+    overflow-x: hidden;
   }
 }
 

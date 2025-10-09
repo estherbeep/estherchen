@@ -30,7 +30,7 @@ export default function Home() {
   }
 
   return (
-    <main className="relative overflow-hidden min-h-screen">
+    <main className="relative min-h-screen">
       <ConfettiBackground />
       <Navigation />
       
