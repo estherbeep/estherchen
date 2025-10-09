@@ -33,15 +33,19 @@ const Navigation = () => {
   }
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
-      className={`fixed-nav transition-all duration-300 ${
+    <nav
+      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${
         scrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200' 
           : 'bg-white/90 backdrop-blur-sm shadow-md'
       }`}
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 9999
+      }}
     >
       <div className="container-max">
         <div className="flex items-center justify-between py-6">
@@ -101,7 +105,7 @@ const Navigation = () => {
           </div>
         </motion.div>
       </div>
-    </motion.nav>
+    </nav>
   )
 }
 
