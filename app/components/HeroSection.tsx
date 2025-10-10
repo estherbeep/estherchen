@@ -7,7 +7,7 @@ import { ChevronDown, Sparkles, MapPin, Calendar } from 'lucide-react'
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden px-4 sm:px-6 lg:px-8">
-      <div className="container-max relative z-10">
+      <div className="container-max relative">
         <div className="flex flex-col items-center text-center">
           {/* Main Headline */}
           <motion.div

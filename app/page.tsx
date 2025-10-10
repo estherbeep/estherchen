@@ -38,7 +38,8 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="relative z-10"
+        layout="position"
+        className="relative"
       >
         <HeroSection />
         <AboutSection />
