@@ -104,6 +104,19 @@ const SeekingSection = () => {
                 </div>
               </div>
         </motion.div>
+
+        {/* Closing Message */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <p className="text-lg text-gray-700 italic">
+            I'm looking for an environment where I can grow and make impact 🌱
+          </p>
+        </motion.div>
       </div>
     </section>
   )

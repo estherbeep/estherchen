@@ -34,14 +34,16 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-[9999] transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${
         scrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200' 
           : 'bg-white/90 backdrop-blur-sm shadow-md'
       }`}
       style={{
-        position: 'sticky',
+        position: 'fixed',
         top: 0,
+        left: 0,
+        right: 0,
         zIndex: 9999,
         width: '100%'
       }}
