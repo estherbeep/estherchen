@@ -7,7 +7,7 @@ const SeekingSection = () => {
   const opportunities = [
     {
       icon: BarChart3,
-      title: 'Finance & Strategy',
+      title: 'Finance & Analytics Internship',
       points: [
       'Financial analysis & insights',
       'Value creation & sustainability',
@@ -16,7 +16,7 @@ const SeekingSection = () => {
     },
     {
       icon: Lightbulb,
-      title: 'Consulting & Problem Solving',
+      title: 'Consulting & Strategy Internship',
       points: [
       'Structured problem-solving',
       'Team collaboration',
@@ -25,7 +25,7 @@ const SeekingSection = () => {
     },
     {
       icon: Settings,
-      title: 'Operations & Automation',
+      title: 'Operations & Automation Internship',
       points: [
       'Process optimization',
       'AI & automation tools',
@@ -48,7 +48,7 @@ const SeekingSection = () => {
             What I'm Seeking
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Internship opportunities in these areas
+            I'm looking for an environment where I can grow, contribute, and make impact 🌱
           </p>
         </motion.div>
 

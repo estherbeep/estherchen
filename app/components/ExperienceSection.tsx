@@ -79,9 +79,9 @@ const ExperienceSection = () => {
       title: 'Sales Assistant',
       company: 'Pet Product Retail',
       category: 'Retail Experience',
-      shortDescription: 'Advised customers on products, handled sales, and tailored recommendations to individual needs',
+      shortDescription: 'Drove sales through personalized recommendations and product knowledge, earning top daily sales recognition',
       description: [
-        'Advised customers on products, handled sales, and tailored recommendations to individual needs'
+        'Drove sales through personalized recommendations and product knowledge, earning top daily sales recognition'
       ]
     }
   ]
@@ -242,9 +242,6 @@ const ExperienceSection = () => {
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-8 leading-tight">
             Experience
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Professional roles and leadership positions that shaped my journey
-          </p>
         </motion.div>
 
         {/* Professional Experience */}
@@ -260,7 +257,6 @@ const ExperienceSection = () => {
               <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
               Professional Experience
             </h3>
-            <p className="text-sm sm:text-base text-gray-600">Real-world consulting and business experience</p>
           </motion.div>
 
           <div className="space-y-6">
@@ -283,7 +279,6 @@ const ExperienceSection = () => {
               <Users className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
               Leadership Roles
             </h3>
-            <p className="text-sm sm:text-base text-gray-600">Driving impact through student organizations</p>
           </motion.div>
 
           <div className="space-y-6">
@@ -306,7 +301,6 @@ const ExperienceSection = () => {
               <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
               Additional Experience
             </h3>
-            <p className="text-sm sm:text-base text-gray-600">Diverse roles and valuable lessons</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-6">

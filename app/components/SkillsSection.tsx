@@ -28,9 +28,6 @@ const SkillsSection = () => {
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-8 leading-tight">
             Top Skills
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Here's what I bring to the table
-          </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">

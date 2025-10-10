@@ -23,16 +23,10 @@ const AboutSection = () => {
               </h2>
               <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-600 leading-relaxed">
                 <p>
-                  I'm someone who believes in taking ownership. When I commit to something, I love 
-                  seeing it grow, improve, and run more efficiently than before. Whether it's leading 
-                  a project, optimizing a process, or finding a smarter way to solve everyday problems, 
-                  I'm driven by the idea of making things work better.
+                  Hi! I'm Esther Chen, a junior at the University of Toronto studying Finance, Data Science, and Strategy. Over the past two years, I've been involved in student clubs and consulting projects. I love taking on new challenges, even when they push me outside my comfort zone. Whenever I'm committed to something, I always aim to make it grow, improve, and run more efficiently than before.
                 </p>
                 <p>
-                  Lately, I've found myself fascinated by automation, from simple Excel macros to AI 
-                  agents and algorithmic trading. It's opened a new way of thinking for me! I'm still 
-                  exploring, but I love learning from people who build, question, and share that 
-                  same curiosity.
+                  I'm the kind of person who gets weirdly excited about making things work better. Recently, I've been building Excel macros, vibe coding (like this website!), and exploring AI agents. I get genuinely excited about automation and efficiency; there's something satisfying about turning "this takes forever" into "this takes 30 seconds."
                 </p>
               </div>
             </div>
