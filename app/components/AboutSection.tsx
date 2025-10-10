@@ -58,8 +58,8 @@ const AboutSection = () => {
               {/* Main Image */}
               <div className="w-full aspect-[3/4] max-w-sm mx-auto rounded-2xl overflow-hidden border-2 border-gray-200 shadow-2xl">
                 <Image
-                  src="/2nd.jpg"
-                  alt="Esther Chen in Taipei"
+                  src="/shine.jpeg"
+                  alt="Esther Chen"
                   fill
                   className="object-contain object-center"
                 />
