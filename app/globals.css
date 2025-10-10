@@ -74,12 +74,12 @@
   }
   
   /* Fixed navigation - ensure it stays visible */
-  nav {
+  nav, div[style*="position: fixed"] {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    z-index: 9999 !important;
+    z-index: 99999 !important;
     width: 100% !important;
   }
   

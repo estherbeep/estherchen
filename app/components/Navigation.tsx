@@ -33,19 +33,17 @@ const Navigation = () => {
   }
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200' 
-          : 'bg-white/90 backdrop-blur-sm shadow-md'
-      }`}
+    <div
       style={{
         position: 'fixed',
         top: 0,
         left: 0,
         right: 0,
-        zIndex: 9999,
-        width: '100%'
+        zIndex: 99999,
+        width: '100%',
+        backgroundColor: 'white',
+        borderBottom: '1px solid #e5e7eb',
+        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
       }}
     >
       <div className="container-max">
@@ -106,7 +104,7 @@ const Navigation = () => {
           </div>
         </motion.div>
       </div>
-    </nav>
+    </div>
   )
 }
 
