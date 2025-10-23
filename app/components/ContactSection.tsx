@@ -59,8 +59,8 @@ const ContactSection = () => {
   const intentions = [
     'Have a potential opportunity for you!',
     'Reach out and we can chat about it!',
-    'Just wanted to say Happy Birthday 🎉',
-    'An advice for a fresh 21 years old',
+    'Just wanted to say hello!',
+    'Looking to connect and network',
     'Other'
   ]
 
@@ -103,7 +103,7 @@ const ContactSection = () => {
             Let's Connect
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Thank you for visiting my birthday project and for scrolling this far. It means a lot!
+            Thank you for visiting my personal website and for scrolling this far. It means a lot!
           </p>
           <p className="text-gray-600 mt-4">
             If you'd like to connect, share a little about yourself below — I'll reach out personally.
@@ -221,7 +221,7 @@ const ContactSection = () => {
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    <span>Send 🎂</span>
+                    <span>Send Message</span>
                   </>
                 )}
               </motion.button>

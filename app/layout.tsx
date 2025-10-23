@@ -3,9 +3,9 @@ import './globals.css'
 import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
-  title: "Esther's Birthday Internship Project",
-  description: "Hi, I'm Esther — and today's my birthday! As a determined student passionate about finance & consulting, I'm celebrating by sharing my journey and seeking an internship opportunity.",
-  keywords: ['Esther Chen', 'Finance', 'Consulting', 'Internship', 'Birthday', 'Student'],
+  title: "Esther Chen - Personal Website",
+  description: "Hi, I'm Esther Chen! A determined student passionate about finance & consulting, sharing my journey and seeking opportunities to grow and make impact.",
+  keywords: ['Esther Chen', 'Finance', 'Consulting', 'Internship', 'Student', 'Personal Website'],
   authors: [{ name: 'Esther Chen' }],
 }
 

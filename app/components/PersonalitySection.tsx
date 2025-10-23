@@ -219,7 +219,7 @@ const PersonalitySection = () => {
           >
             <div className="bg-white/80 backdrop-blur-sm border border-gray-200 p-8 rounded-2xl shadow-lg">
               <p className="text-lg text-gray-800 leading-relaxed mb-4">
-                Putting myself out here with this little project might be the bravest thing I've ever done. 
+                Putting myself out here with this personal website might be the bravest thing I've ever done. 
                 So if you've taken a moment to stop by, thank you, really.
               </p>
               <p className="text-lg text-gray-600 mb-4">

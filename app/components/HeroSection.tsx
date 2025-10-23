@@ -6,7 +6,7 @@ import { ChevronDown, Sparkles, MapPin, Calendar } from 'lucide-react'
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden px-4 sm:px-6 lg:px-8">
+    <section id="home" className="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden px-4 sm:px-6 lg:px-8">
       <div className="container-max relative">
         <div className="flex flex-col items-center text-center">
           {/* Main Headline */}
@@ -17,10 +17,10 @@ const HeroSection = () => {
             className="mb-8"
           >
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-gray-900 mb-4 leading-tight">
-              Hi, I'm Esther!
+              Esther Chen
             </h1>
             <div className="text-2xl sm:text-3xl font-medium text-orange-600 mt-4">
-              Welcome to my birthday project!
+              Welcome to my personal website!
             </div>
           </motion.div>
 
@@ -80,7 +80,7 @@ const HeroSection = () => {
             className="mb-8"
           >
             <p className="text-lg text-gray-600 max-w-lg mx-auto leading-relaxed">
-              Birthdays mark milestones. This year, I'm shooting my shot for an internship opportunity in finance & consulting. Hope your day's going really well, by the way ✨
+              I'm a passionate student exploring finance & consulting, always eager to learn and grow. I believe in the power of continuous improvement and making meaningful connections. Hope you're having a great day! ✨
             </p>
           </motion.div>
 

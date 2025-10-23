@@ -12,7 +12,6 @@ import SeekingSection from './components/SeekingSection'
 import PersonalitySection from './components/PersonalitySection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
-import ConfettiBackground from './components/ConfettiBackground'
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -31,7 +30,6 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen">
-      <ConfettiBackground />
       <Navigation />
       
       <motion.div
